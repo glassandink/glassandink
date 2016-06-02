@@ -1,0 +1,126 @@
+fieldset {
+  background-color: $secondary-background-color;
+  border: $base-border;
+  border: 0;
+  margin: 0 0 $small-spacing;
+  padding: $small-spacing;
+  @media (max-width: 415px) {
+    padding: $base-spacing;
+  }
+}
+
+input,
+label,
+select {
+  display: block;
+  font-family: $heading-font-family;
+  font-size: $base-font-size;
+}
+
+label {
+  font-weight: 400;
+  margin-bottom: $small-spacing / 4;
+  color: $medium-gray;
+
+  &.required::after {
+    content: "*";
+  }
+
+  abbr {
+    display: none;
+  }
+}
+
+label > h5 {
+  margin-bottom: 0;
+  padding-bottom: $smaller-spacing / 3;
+  color: $dark-gray;
+}
+
+#{$all-text-inputs},
+select[multiple=multiple] {
+  color: #fff;
+  background-color: $dark-gray;
+  border: $dark-border;
+  border: 0;
+  border-radius: $base-border-radius;
+  // border-radius: 0;
+  box-shadow: $form-box-shadow;
+  box-shadow: 0;
+  box-sizing: border-box;
+  font-family: $heading-font-family;
+  font-size: $base-font-size;
+  margin-bottom: $small-spacing;
+  padding: $base-spacing / 3;
+  transition: border-color $base-duration $base-timing;
+  width: 100%;
+
+  @include placeholder {
+    font-family: $heading-font-family;
+    color: $light-gray;
+  }
+
+  &:hover {
+    border-color: shade($base-border-color, 20%);
+  }
+
+  &:focus {
+    border-color: $action-color;
+    box-shadow: $form-box-shadow-focus;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: shade($base-background-color, 5%);
+    cursor: not-allowed;
+
+    &:hover {
+      border: $base-border;
+    }
+  }
+}
+
+textarea {
+  resize: vertical;
+  margin-bottom: 0;
+}
+
+input[type="search"] {
+  appearance: none;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline;
+  margin-right: $small-spacing / 2;
+
+  + label {
+    display: inline-block;
+  }
+}
+
+input[type="file"] {
+  margin-bottom: $small-spacing;
+  width: 100%;
+}
+
+select {
+  margin-bottom: $base-spacing;
+  max-width: 100%;
+  width: auto;
+}
+
+.form__group {
+  margin: $small-spacing*1.5 0;
+  &.submit {
+    border-top: $base-border;
+    padding-top: $small-spacing;
+    margin-top: $small-spacing;
+    margin-bottom: 0;
+  }
+}
+
+.form__title {
+  border-bottom: $base-border;
+  padding-bottom: $smaller-spacing;
+}
