@@ -79,7 +79,7 @@ gems:
   - jekyll-picture-tag 
   - redcarpet
 
-markdown: redcarpet
+# markdown: redcarpet
 
 picture:
   source: /images/
