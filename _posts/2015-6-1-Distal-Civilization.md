@@ -3,8 +3,4 @@ layout: post
 title: Distal - Civilization
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
-
-![_config.yml]({{ site.baseurl }}/images/config.png)
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum reprehenderit placeat nesciunt eaque, iusto aperiam nulla accusamus ea porro illo, rerum consequatur, ipsum repellendus fugiat cumque labore. Eos culpa ipsa odio assumenda vel consequatur in doloribus modi voluptatem dignissimos aspernatur quidem explicabo ab, perspiciatis placeat ad, libero tempore sequi, a id, ratione quis nostrum at consequuntur! Asperiores veritatis odio, blanditiis saepe omnis ipsa expedita quidem quibusdam velit maxime nesciunt molestiae facilis provident doloribus quae laboriosam consectetur voluptatibus tempora corporis. Amet fuga repudiandae, reiciendis sit nihil provident accusantium error explicabo debitis recusandae, cupiditate laborum alias ut labore doloribus dolorem ex, repellendus.
