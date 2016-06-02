@@ -1,3 +1,18 @@
 .navbar {
-	padding: $small-spacing;
+	display: flex;
+	justify-content: space-between;
+	> * {
+		padding: 0 $base-spacing;
+	}
+}
+.navbar__brand, .navbar__nav {
+	line-height: 3rem;
+	@include bp(small-up){
+		line-height: $navbar-height;	
+	}
+}
+.navbar__nav {
+	a {
+		margin-left: $small-spacing;
+	}
 }

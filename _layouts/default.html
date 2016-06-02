@@ -9,13 +9,43 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}css/stylesheet.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
-    <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
   </head>
 
   <body>
+
+    <header class="navbar">
+      
+      <div class="navbar__brand">
+        <a href="{{ site.baseurl }}/">{{ site.name }}</a>
+      </div>
+
+      <nav class="navbar__nav">
+        <a href="{{ site.baseurl }}/">portfolio</a>
+        <!-- <a href="{{ site.baseurl }}/about">blog</a> -->
+        <a href="{{ site.baseurl }}/contact">contact</a>
+      </nav>
+
+    </header>
+
+    <main>
+      
+      <article class="hero">
+        <div class="hero__content">
+          <a href="#" class="hero__link">
+            <h1>Farmer's Reserve</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum optio excepturi molestiae quam quasi perferendis cumque itaque perspiciatis est delectus.</p>
+            <p class="hero__cta">view project</p>
+          </a>
+        </div>
+      </article>
+
+
+
+    </main>
+    <!-- 
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
@@ -32,19 +62,19 @@
           </nav>
         </header>
       </div>
-    </div>
+    </div> -->
 
-    <div id="main" role="main" class="container">
+<!--     <div id="main" role="main" class="container">
       {{ content }}
-    </div>
+    </div> -->
 
-    <div class="wrapper-footer">
+<!--     <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
           {% include svg-icons.html %}
         </footer>
       </div>
-    </div>
+    </div> -->
 
     {% include analytics.html %}
   </body>

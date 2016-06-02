@@ -1,3 +1,7 @@
+// Jekyll
+@import "jekyll/highlights";
+@import "jekyll/svg-icons"; 
+
 // Helpers
 @import 'helpers/bourbon/bourbon';
 @import 'helpers/juice';
@@ -7,4 +11,5 @@
 @import 'base/base';
 
 // Components
+@import 'components/layout';
 @import 'components/navbar'
