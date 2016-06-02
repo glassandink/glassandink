@@ -1,18 +1,16 @@
 ---
 layout: default
 ---
-
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+{% for post in site.posts %}
+<article class="hero">
+    <div class="container">
+        <div class="hero__content">
+            <a href="{{ site.baseurl }}{{ post.url }}" class="hero__link">
+                <h1>{{ post.title }}</h1>
+                <p>{{ post.excerpt }}</p>
+                <p class="hero__cta">view project</p>
+            </a>
+        </div>
+    </div>
+</article>
+{% endfor %}
