@@ -1,6 +1,7 @@
 .container {
 	max-width: 40em;
 	margin: 0 auto;
+	padding: 0 $small-spacing;
 }
 
 .hero {
@@ -50,7 +51,9 @@ a.hero__link {
 		margin-left: -.06em;
 	}
 }
-
+.contact-form {
+	margin: $base-spacing 0;
+}
 .post {
 	margin-bottom: $base-spacing;
 }

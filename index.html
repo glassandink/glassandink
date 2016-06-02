@@ -7,7 +7,7 @@ layout: default
         <div class="hero__content">
             <a href="{{ site.baseurl }}{{ post.url }}" class="hero__link">
                 <h1>{{ post.title }}</h1>
-                <p>{{ post.excerpt }}</p>
+                <p>{{ post.excerpt | truncatewords:20}}</p>
                 <p class="hero__cta">view project</p>
             </a>
         </div>

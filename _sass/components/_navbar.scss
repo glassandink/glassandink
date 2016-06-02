@@ -2,8 +2,12 @@
 	display: flex;
 	justify-content: space-between;
 	> * {
-		padding: 0 $base-spacing;
+		padding: 0 $small-spacing;
+		@include bp(small-up) {
+			padding: 0 $base-spacing;
+		}
 	}
+
 }
 .navbar__brand, .navbar__nav {
 	line-height: 3rem;
