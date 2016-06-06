@@ -2,7 +2,9 @@
     width: 100%;
     height: calc(100vh - 5rem);
 }
-
+.swiper-wrapper {
+	padding: $small-spacing;
+}
 .swiper-slide {
 	display: flex;
 	align-items: center;

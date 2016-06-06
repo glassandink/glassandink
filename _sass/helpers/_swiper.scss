@@ -118,9 +118,9 @@
 .swiper-button-next {
   position: absolute;
   top: 50%;
-  width: 27px;
-  height: 44px;
-  margin-top: -22px;
+  width: $base-spacing;
+  height: $base-spacing;
+  margin-top: $base-spacing/2;
   z-index: 10;
   cursor: pointer;
   -moz-background-size: 27px 44px;
@@ -128,6 +128,7 @@
   background-size: 27px 44px;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
