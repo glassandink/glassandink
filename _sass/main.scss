@@ -8,6 +8,7 @@
 @import 'helpers/normalize';  
 @import 'helpers/fluidproperty';  
 @import 'helpers/animsition';  
+@import 'helpers/swiper';  
 
 // Base
 @import 'base/base';
@@ -16,3 +17,4 @@
 @import 'components/layout';
 @import 'components/navbar';
 @import 'components/post';
+@import 'components/swipers';

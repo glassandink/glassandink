@@ -1,0 +1,17 @@
+{
+  "name": "glassandink.github.io",
+  "description": "glass&ink portfolio",
+  "main": "index.js",
+  "authors": [
+    "BrendanMP <brendan.m.pete@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/glassandink/glassandink.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
