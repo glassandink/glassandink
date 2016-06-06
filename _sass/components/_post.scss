@@ -41,3 +41,10 @@
 	// letter-spacing: 0.1em;
 	// text-transform: uppercase;
 }
+
+.post__nav {
+	margin: $base-spacing 0 $base-spacing*2;
+	.next {
+		float: right;
+	}
+}
