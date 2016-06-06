@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Distal - Civilization
+title: The Proper Pour
 post_description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam adipisci sit nobis harum quis, minima, tempora repudiandae delectus. Dolor qui expedita.
 post_image: /images/distal_01.jpg
 ---

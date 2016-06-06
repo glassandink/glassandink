@@ -1,17 +1,37 @@
+body {
+	font-size: 14px;
+	
+	@include bp(medium-up) {
+		font-size: 16px;
+	}
+}
+
 .container {
 	max-width: 40em;
 	margin: 0 auto;
 	padding: 0 $small-spacing;
 }
 
-.hero {
+
+.project__grid {
+	display: flex;
+	flex-direction: column;
+
+	@include bp(large-up) {
+		flex-direction: row;
+	}
+
+}
+
+.project {
 	min-height: calc(100vh - 5rem);
-	// background-image: url(http://static1.squarespace.com/static/51e49870e4b09000c7b24043/53a4def7e4b0015fbd205d3a/56ea1363d210b8c5e871377e/1458180965857/DoubleCup_Blue.jpg?format=2500w);
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
 	
 	position: relative;
+
+	
 	
 	&:before {
 	    content: '';
@@ -20,22 +40,26 @@
 	    right: 0;
 	    bottom: 0;
 	    left: 0;
-	    background-image: linear-gradient(to bottom right, #000, #000);
-	    opacity: .4;
-	    z-index: 1;
+	    background-image: linear-gradient(to bottom right, $primary, $primary);
+	    opacity: .9;
+	    z-index: 10;
 	}
 
-
+	display: block;
 	display: flex;
 	flex-direction: column;
 	align-items: left;
-	justify-content: center;
-
+	justify-content: top;
 }
 
-.hero__content {
+.project__container {
+	padding: $base-spacing*2 $small-spacing;
+	flex: 30em;
+}
+
+.project__content {
 	position: relative;
-	z-index: 2;
+	z-index: 20;
 }
 
 .hero__cta {
@@ -46,7 +70,6 @@
 a.hero__link {
 	color: #fff;
 	@include hoverer(color, #fff, rgba(white, 0.8));
-	
 	h1 {
 		margin-left: -.06em;
 	}

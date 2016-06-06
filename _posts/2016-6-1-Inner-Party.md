@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Inner Party
+post_description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam adipisci sit nobis harum quis, minima, tempora repudiandae delectus. Dolor qui expedita.
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam adipisci sit nobis harum quis, minima, tempora repudiandae delectus. Dolor qui expedita, maiores officiis ut ullam architecto inventore est sint, hic molestiae nisi incidunt non sequi quaerat iure et, consequuntur quod aperiam laborum. Molestiae eveniet non nihil expedita, vero adipisci error.

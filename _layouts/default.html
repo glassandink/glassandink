@@ -11,37 +11,38 @@
 
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/css/stylesheet.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+    
 
-    <script src="{{ site.baseurl }}/js/picturefill.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="{{ site.baseurl }}/js/main.js"></script>
+
+
 
   </head>
 
   <body>
-
-    <header class="navbar">
+    <div class="page-wrapper">
+      <header class="navbar">
 
             
-      <div class="navbar__brand">
-        <a href="{{ site.baseurl }}/">{{ site.name }}</a>
+      <div class="navbar__brand" class="">
+        <a href="{{ site.baseurl }}/" class="link-animate">{{ site.name }}</a>
       </div>
 
       <nav class="navbar__nav">
-        <a href="{{ site.baseurl }}/">portfolio</a>
+        <a href="{{ site.baseurl }}/" class="link-animate">portfolio</a>
         <!-- <a href="{{ site.baseurl }}/about">blog</a> -->
-        <a href="{{ site.baseurl }}/contact">contact</a>
+        <a href="{{ site.baseurl }}/contact" 
+          class="link-animate">
+          contact
+        </a>
       </nav>
 
     </header>
 
-    <main>
-      
-      
-
-
-
+    <main id="main" role="main" class="">
+      {{ content }}
     </main>
+
+
     <!-- 
     <div class="wrapper-masthead">
       <div class="container">
@@ -59,19 +60,23 @@
           </nav>
         </header>
       </div>
-    </div> -->
+    </div> 
+    -->
 
-    <div id="main" role="main" class="">
-      {{ content }}
-    </div>
-
-<!--     <div class="wrapper-footer">
+    <!--
+    <div class="wrapper-footer">
       <div class="container">
         <footer class="footer">
           {% include svg-icons.html %}
         </footer>
       </div>
-    </div> -->
+    </div> 
+    -->  
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="{{ site.baseurl }}/js/animsition.js" type="text/javascript"></script>
+    <script src="{{ site.baseurl }}/js/main.js"></script>
 
     {% include analytics.html %}
   </body>

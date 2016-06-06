@@ -4,7 +4,7 @@ body {
   font-feature-settings: "kern", "liga", "pnum";
   font-size: $base-font-size;
   line-height: $base-line-height;
-  font-weight: 100;
+  font-weight: 300;
 }
 
 h1,
@@ -72,6 +72,23 @@ h6 {
 
 .text-muted {
   color: $medium-gray;
+}
+h1 {
+  .highlight {
+    display: inline;
+    background: $primary;
+    color: white; 
+    padding: $small-spacing;
+    padding-left: 0;
+    padding-right: 0;
+    -webkit-box-decoration-break: clone;
+    -ms-box-decoration-break: clone;
+    -o-box-decoration-break: clone;
+    box-decoration-break: clone;
+    box-shadow: 
+          $small-spacing 0 0 $primary, 
+          -$small-spacing 0 0 $primary;
+  }
 }
 
 

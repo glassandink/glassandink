@@ -1,16 +1,19 @@
 ---
 layout: default
 ---
-{% for post in site.posts %}
-<article class="hero">
-    <div class="container">
-        <div class="hero__content">
-            <a href="{{ site.baseurl }}{{ post.url }}" class="hero__link">
-                <h1>{{ post.title }}</h1>
-                <p>{{ post.excerpt | truncatewords:20}}</p>
-                <p class="hero__cta">view project</p>
-            </a>
-        </div>
-    </div>
-</article>
-{% endfor %}
+<div class="project__grid">
+	{% for post in site.posts %}
+	<article class="project" style="background-image:url({{ post.post_image }})">
+	    <div class="project__container">
+	        <div class="project__content">
+	            <a href="{{ site.baseurl }}{{ post.url }}" class="hero__link link-animate">
+	                <h1><span>{{ post.title }}</span></h1>
+	                <p>{{ post.post_description | truncatewords:30 | }}</p>
+	                <p class="hero__cta">view project</p>
+	            </a>
+	        </div>
+	    </div>
+	</article>
+	{% endfor %}
+</div>
+
